@@ -402,6 +402,9 @@ footer {
   }
 }
 
+@media (max-width: 750px) {
+}
+
 //  Contact Section////////////////////
 
 .container {
@@ -424,7 +427,9 @@ ul {
     padding: 128px 0px;
     .container {
       .contact-form {
+        font-family: sans-serif, poppins;
         &__btn {
+          cursor: pointer;
           padding: 15px 51px;
           width: 254px;
           height: 64px;
@@ -486,6 +491,7 @@ ul {
           line-height: 64px;
         }
         &__paragraph {
+          margin-bottom: 64px;
           width: 562px;
           max-width: 100%;
           color: var(--Dark-blue, #282938);
@@ -519,3 +525,351 @@ ul {
 }
 
 // contact section
+
+// Blog section////////////////////////
+
+.blog {
+  background: #fff;
+  .blog-text {
+    h1 {
+      padding: 128px 0 16px 0;
+      margin: 0 auto;
+      max-width: 949px;
+      color: var(--Dark-blue, #282938);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 64px;
+    }
+    p {
+      color: var(--Dark-blue, #282938);
+      text-align: center;
+      padding-bottom: 32px;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+    }
+    .p2 {
+      color: var(--Dark-blue, #282938);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      max-width: 831px;
+      margin: 0 auto;
+      padding-top: 48px;
+    }
+    h5 {
+      color: var(--Royal-Blue, #2405f2);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+  .our-blog {
+    .blog-card2 {
+      display: flex;
+      justify-content: space-between;
+    }
+    .blog-card {
+      display: flex;
+      justify-content: space-between;
+    }
+    h1 {
+      padding-top: 128px;
+      color: var(--Dark-blue, #282938);
+      font-family: Poppins;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 64px;
+      text-align: center;
+    }
+  }
+  .blog-cards {
+    padding-top: 48px;
+    .data {
+      padding-top: 32px;
+      color: var(--Dark-blue, #282938);
+    }
+    h3 {
+      padding: 16px 0;
+      max-width: 404px;
+      color: var(--Dark-blue, #282938);
+      font-family: Poppins;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .data-text {
+      color: var(--Dark-blue, #282938);
+      max-width: 404px;
+      padding-bottom: 24px;
+    }
+    .read_more {
+      padding-bottom: 128px;
+    }
+  }
+}
+
+@media (max-width: 1390px) {
+  .blog {
+    .container {
+      .blog-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+@media (max-width: 880px) {
+  .blog {
+    .container {
+      .blog-cards {
+        grid-template-columns: 1fr;
+        width: 100%;
+      }
+    }
+  }
+}
+// blog section
+
+// pricing section//////////////////
+
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main {
+  font-family: sans-serif;
+  .pricing {
+    padding: 128px 0px;
+
+    .container {
+      .pricing_support {
+        text-align: center;
+
+        .pricing_title {
+          color: #282938;
+          font-family: Poppins;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 64px;
+          margin-bottom: 16px;
+        }
+
+        .pricing_text {
+          color: #282938;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px;
+          margin-bottom: 64px;
+        }
+      }
+    }
+    .pricing_content {
+      display: flex;
+      justify-content: space-between;
+    }
+    .pricing_card {
+      padding-left: 48px;
+      max-width: 406px;
+      height: 745px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 12px;
+      background: var(--Grey, #f4f6fc);
+      span {
+        gap: 20px;
+        align-items: center;
+        display: flex;
+        h1 {
+          color: var(--Dark-blue, #282938);
+          font-family: Poppins;
+          font-size: 38px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 56px;
+        }
+        .per {
+          color: var(--Royal-Blue, #2405f2);
+        }
+      }
+      h4 {
+        color: var(--Dark-blue, #282938);
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 36px;
+      }
+      .p2 {
+        padding: 20px 0 8px 0;
+        padding-bottom: 78px;
+        max-width: 281px;
+        color: var(--Dark-blue, #282938);
+      }
+      .limited_links {
+        a {
+          display: flex;
+          align-items: center;
+          color: var(--Dark-blue, #282938);
+        }
+        gap: 30px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+      }
+      .btn_price {
+        padding-top: 79px;
+        button {
+          border: none;
+          max-width: 254px;
+          padding: 15px 51px;
+          color: var(--Grey, #f4f6fc);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 32px;
+          border-radius: 41px;
+          background: var(--Dark-blue, #282938);
+        }
+      }
+    }
+    .pricing_card:hover {
+      transition: 1s;
+      background: #1c1e53;
+      h1 {
+        color: var(--White, #fff);
+      }
+      .per {
+        color: gold;
+      }
+      h4 {
+        color: var(--White, #fff);
+      }
+      p {
+        color: var(--White, #fff);
+      }
+      a {
+        color: var(--White, #fff);
+      }
+      button {
+        background-color: gold;
+        color: #1b1c2b;
+      }
+    }
+  }
+
+  .frequently {
+    .container {
+      .frequently_content {
+        display: flex;
+        padding-bottom: 128px;
+
+        .frequently_support {
+          margin-right: 53px;
+
+          .frequently_title {
+            color: #282938;
+            font-family: Poppins;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 64px;
+            margin-bottom: 16px;
+          }
+
+          .frequently_text {
+            color: #2405f2;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+          }
+        }
+
+        .frequently_middle {
+          .frequently_content_text {
+            display: flex;
+
+            .frequently__img {
+              margin-right: 58px;
+            }
+
+            .frequently_sub__title {
+              color: #282938;
+              font-family: Poppins;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 36px;
+              margin-bottom: 16px;
+              margin-right: 323.2px;
+            }
+
+            .frequently_sub__title_primary {
+              color: #282938;
+              font-family: Poppins;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 36px;
+              margin-bottom: 32px;
+              margin-right: 323.2px;
+            }
+          }
+
+          .frequently_sub__text {
+            color: #282938;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+            margin-left: 82px;
+            margin-bottom: 48px;
+          }
+
+          hr {
+            width: 843px;
+            height: 1px;
+            background: rgba(194, 187, 255, 0.7);
+            margin-bottom: 32px;
+          }
+
+          .last {
+            width: 843px;
+            height: 1px;
+            background: rgba(194, 187, 255, 0.7);
+          }
+        }
+      }
+    }
+  }
+}
