@@ -99,7 +99,7 @@ body .hero .btn_hero {
 }
 body .hero .work_btn {
   cursor: pointer;
-  color: #1b1c2b;
+  color: #fff;
   border: none;
   font-size: 18px;
   font-style: normal;
@@ -107,9 +107,16 @@ body .hero .work_btn {
   line-height: 32px;
   padding: 16px 56px;
   border-radius: 41px;
+  background: transparent;
+}
+body .hero .work_btn:hover {
+  transition: 0.5s;
   background: #fcd980;
+  color: #1b1c2b;
 }
 body .hero .pricing_btn {
+  border-radius: 41px;
+  padding: 16px 56px;
   cursor: pointer;
   background-color: transparent;
   color: var(--White, #fff);
@@ -118,6 +125,11 @@ body .hero .pricing_btn {
   font-weight: 500;
   line-height: 28px;
   border: none;
+}
+body .hero .pricing_btn:hover {
+  background-color: #fcd980;
+  color: #1b1c2b;
+  transition: 0.5s;
 }
 body .view {
   padding-bottom: 128px;
@@ -276,6 +288,7 @@ footer .footer_image p {
   max-width: 399px;
 }
 footer .footer_image .email_call {
+  padding-left: 20px;
   padding-top: 10px;
   gap: 40px;
   display: flex;
@@ -730,6 +743,7 @@ ul {
   color: var(--White, #fff);
 }
 .main .pricing .pricing_card:hover button {
+  cursor: pointer;
   background-color: gold;
   color: #1b1c2b;
 }

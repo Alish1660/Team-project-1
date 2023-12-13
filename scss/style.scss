@@ -95,7 +95,7 @@ body {
     }
     .work_btn {
       cursor: pointer;
-      color: #1b1c2b;
+      color: #fff;
       border: none;
       font-size: 18px;
       font-style: normal;
@@ -103,9 +103,16 @@ body {
       line-height: 32px;
       padding: 16px 56px;
       border-radius: 41px;
+      background: transparent;
+    }
+    .work_btn:hover {
+      transition: 0.5s;
       background: #fcd980;
+      color: #1b1c2b;
     }
     .pricing_btn {
+      border-radius: 41px;
+      padding: 16px 56px;
       cursor: pointer;
       background-color: transparent;
       color: var(--White, #fff);
@@ -114,6 +121,11 @@ body {
       font-weight: 500;
       line-height: 28px;
       border: none;
+    }
+    .pricing_btn:hover {
+      background-color: #fcd980;
+      color: #1b1c2b;
+      transition: 0.5s;
     }
   }
   .view {
@@ -142,6 +154,7 @@ body {
         line-height: 28px;
       }
     }
+
     .view_image {
       padding-top: 64px;
       display: flex;
@@ -278,6 +291,7 @@ footer {
       max-width: 399px;
     }
     .email_call {
+      padding-left: 20px;
       padding-top: 10px;
       gap: 40px;
       display: flex;
@@ -778,6 +792,7 @@ ul {
         color: var(--White, #fff);
       }
       button {
+        cursor: pointer;
         background-color: gold;
         color: #1b1c2b;
       }
